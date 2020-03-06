@@ -7,6 +7,7 @@ const runPythonScript = require('./run-python-script');
 runPythonScript('./program.py')
   .then(result => {
     // Do something with result
+    console.log('Result printed by Python script before exiting:');
     console.log(result);
   })
   .catch(error => {
